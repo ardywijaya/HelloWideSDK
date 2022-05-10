@@ -19,9 +19,9 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "12.0"
   spec.ios.deployment_target = "12.0"
   spec.source       = { :git => "https://github.com/ardywijaya/HelloWideSDK.git", :tag => "#{spec.version}" }
-  spec.vendored_frameworks = 'Frameworks/HelloWideSDK.xcframework', 'Frameworks/WebRTC.xcframework'
-  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.vendored_frameworks = 'Frameworks/HelloWideSDK.xcframework'
+  # spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  A list of resources included with the Pod. These are copied into the
